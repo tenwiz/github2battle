@@ -1,0 +1,94 @@
+[debug] [2017-10-06T12:15:34.442Z] ----------------------------------------------------------------------
+[debug] [2017-10-06T12:15:34.444Z] Command:       /usr/local/Cellar/node/8.5.0/bin/node /Users/martian/Projects/WebStorm/Github-Battle/node_modules/.bin/firebase login
+[debug] [2017-10-06T12:15:34.444Z] CLI Version:   3.13.1
+[debug] [2017-10-06T12:15:34.444Z] Platform:      darwin
+[debug] [2017-10-06T12:15:34.445Z] Node Version:  v8.5.0
+[debug] [2017-10-06T12:15:34.445Z] Time:          Fri Oct 06 2017 20:15:34 GMT+0800 (CST)
+[debug] [2017-10-06T12:15:34.445Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=642849421&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2017-10-06T12:16:05.461Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/mehFcJVXkK3ET8Zb3Y2XxNl8odUSlQpUH0HFz6IPCz0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Fri Oct 06 2017 20:16:05 GMT+0800 (CST)
+[debug] [2017-10-06T12:17:19.557Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/mehFcJVXkK3ET8Zb3Y2XxNl8odUSlQpUH0HFz6IPCz0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Fri Oct 06 2017 20:17:19 GMT+0800 (CST)
+[debug] [2017-10-06T12:17:21.441Z] Token Fetch Error: Error
+    at FirebaseError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/error.js:11:17)
+    at Request._callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/api.js:32:23)
+    at self.callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:186:22)
+    at emitOne (events.js:115:13)
+    at Request.emit (events.js:210:7)
+    at Request.onRequestError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:878:8)
+    at emitOne (events.js:115:13)
+    at ClientRequest.emit (events.js:210:7)
+    at TLSSocket.socketErrorListener (_http_client.js:401:9)
+    at emitOne (events.js:115:13)
+[debug] [2017-10-06T12:17:42.215Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/Qi_WWld1iJKpxQ4eF6fiCfERh-eyx7ywYMizxKufD2I',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Fri Oct 06 2017 20:17:42 GMT+0800 (CST)
+[debug] [2017-10-06T12:18:35.689Z] Token Fetch Error: Error
+    at FirebaseError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/error.js:11:17)
+    at Request._callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/api.js:32:23)
+    at self.callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:186:22)
+    at emitOne (events.js:115:13)
+    at Request.emit (events.js:210:7)
+    at Request.onRequestError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:878:8)
+    at emitOne (events.js:115:13)
+    at ClientRequest.emit (events.js:210:7)
+    at TLSSocket.socketErrorListener (_http_client.js:401:9)
+    at emitOne (events.js:115:13)
+[debug] [2017-10-06T12:18:58.075Z] Token Fetch Error: Error
+    at FirebaseError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/error.js:11:17)
+    at Request._callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/api.js:32:23)
+    at self.callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:186:22)
+    at emitOne (events.js:115:13)
+    at Request.emit (events.js:210:7)
+    at Request.onRequestError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:878:8)
+    at emitOne (events.js:115:13)
+    at ClientRequest.emit (events.js:210:7)
+    at TLSSocket.socketErrorListener (_http_client.js:401:9)
+    at emitOne (events.js:115:13)
+[debug] [2017-10-06T12:19:16.399Z] ----------------------------------------------------------------------
+[debug] [2017-10-06T12:19:16.403Z] Command:       /usr/local/Cellar/node/8.5.0/bin/node /Users/martian/Projects/WebStorm/Github-Battle/node_modules/.bin/firebase login
+[debug] [2017-10-06T12:19:16.403Z] CLI Version:   3.13.1
+[debug] [2017-10-06T12:19:16.403Z] Platform:      darwin
+[debug] [2017-10-06T12:19:16.403Z] Node Version:  v8.5.0
+[debug] [2017-10-06T12:19:16.404Z] Time:          Fri Oct 06 2017 20:19:16 GMT+0800 (CST)
+[debug] [2017-10-06T12:19:16.404Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=86423387&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2017-10-06T12:19:27.731Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/Q4XHnaE7X7z4oOT3MhVyhoVSGR7e6FrBVmcrrLvOuM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Fri Oct 06 2017 20:19:27 GMT+0800 (CST)
+[debug] [2017-10-06T12:20:43.055Z] Token Fetch Error: Error
+    at FirebaseError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/error.js:11:17)
+    at Request._callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/firebase-tools/lib/api.js:32:23)
+    at self.callback (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:186:22)
+    at emitOne (events.js:115:13)
+    at Request.emit (events.js:210:7)
+    at Request.onRequestError (/Users/martian/Projects/WebStorm/Github-Battle/node_modules/request/request.js:878:8)
+    at emitOne (events.js:115:13)
+    at ClientRequest.emit (events.js:210:7)
+    at TLSSocket.socketErrorListener (_http_client.js:401:9)
+    at emitOne (events.js:115:13)
