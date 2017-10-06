@@ -12,7 +12,7 @@ const getProfile = (username) => {
 
 const getRepos = (username) => {
   // return axios.get(`https://api.github.com/users/${username}/repos${params}&per_page=100`)
-  return axios.get(`https://api.github.com/users/${username}/repos&per_page=100`)
+  return axios.get(`https://api.github.com/users/${username}/repos?per_page=100`)
     .then(user => user.data)
 }
 
