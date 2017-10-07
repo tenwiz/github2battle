@@ -7,18 +7,14 @@ import PlayerPreview from './PlayerPreview'
 class PlayerInput extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      username: ''
-    }
+    this.state = { username: '' }
 
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
-    const value = event.target.value
-
-    this.setState({ username: value })
+    this.setState({ username: event.target.value })
   }
 
   handleSubmit(event) {
@@ -32,23 +28,18 @@ class PlayerInput extends Component {
     const { username } = this.state
 
     return (
-      <form className='column' onSubmit={this.handleSubmit}>
-        <label className='header' htmlFor='username'>{label}</label>
-        <input
-          id='username'
-          placeholder='github username'
-          type='text'
-          value={username}
-          autoComplete='off'
-          onChange={this.handleChange}
-        />
-        <button
-          className='button'
-          type='submit'
-          disabled={!username}
-        >
-          Submit
-        </button>
+      <form className='column'
+        onSubmit={this.handleSubmit}>
+          <label className='header' htmlFor='username'>
+            {label}
+          </label>
+          <input id='username' placeholder='github username' type='text' autoComplete='off'
+            value={username}
+            onChange={this.handleChange} />
+          <button className='button' type='submit'
+            disabled={!username}>
+              Submit
+          </button>
       </form>
     )
   }
@@ -74,20 +65,16 @@ class Battle extends Component {
   }
 
   handleSubmit(id, username) {
-    this.setState(() => {
-      const newState = {}
-      newState[id + 'Name'] = username
-      newState[id + 'Image'] = `https://github.com/${username}.png?size=200`
-      return newState
+    this.setState({
+      [`${id}Name`]: username,
+      [`${id}Image`]: `https://github.com/${username}.png?size=200`
     })
   }
 
   handleReset(id) {
-    this.setState(() => {
-      const newState = {}
-      newState[id + 'Name'] = ''
-      newState[id + 'Image'] = null
-      return newState
+    this.setState({
+      [`${id}Name`]: '',
+      [`${id}Image`]: null
     })
   }
 
@@ -98,52 +85,38 @@ class Battle extends Component {
     return (
       <div>
         <div className='row'>
-          {!playerOneName
-            ? <PlayerInput
-                id='playerOne'
-                label='Player One'
-                onSubmit={this.handleSubmit}
-              />
-            : <PlayerPreview
+          {playerOneName
+            ? <PlayerPreview
                 avatar={playerOneImage}
-                username={playerOneName}
-              >
-                <button
-                  className='reset'
-                  onClick={() => this.handleReset('playerOne')}
-                >
-                  Reset
-                </button>
-              </PlayerPreview>}
+                username={playerOneName}>
+                  <button className='reset'
+                    onClick={() => this.handleReset('playerOne')}>
+                      Reset
+                  </button>
+              </PlayerPreview>
+            : <PlayerInput id='playerOne' label='Player One'
+                onSubmit={this.handleSubmit} />}
 
-          {!playerTwoName
-            ? <PlayerInput
-                id='playerTwo'
-                label='Player Two'
-                onSubmit={this.handleSubmit}
-              />
-            : <PlayerPreview
+          {playerTwoName
+            ? <PlayerPreview
                 avatar={playerTwoImage}
-                username={playerTwoName}
-              >
-                <button
-                  className='reset'
-                  onClick={() => this.handleReset('playerTwo')}
-                >
-                  Reset
-                </button>
-              </PlayerPreview>}
+                username={playerTwoName}>
+                  <button className='reset'
+                    onClick={() => this.handleReset('playerTwo')}>
+                      Reset
+                  </button>
+              </PlayerPreview>
+            : <PlayerInput id='playerTwo' label='Player Two'
+                onSubmit={this.handleSubmit} />}
         </div>
 
         {playerOneName && playerTwoName &&
-          <Link
-            className='button'
+          <Link className='button'
             to={{
               pathname: `${match.url}/results`,
               search: `?playerOneName=${playerOneName}&playerTwoName=${playerTwoName}`
-            }}
-          >
-            Battle
+            }}>
+              Battle
           </Link>
         }
       </div>

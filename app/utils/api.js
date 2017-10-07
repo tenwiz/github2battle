@@ -27,13 +27,11 @@ const calculateScore = ({ followers }, repos) => (
 )
 
 const getUserData = player => (
-  Promise.all([
-    getProfile(player),
-    getRepos(player)
-  ]).then(([ profile, repos ]) => ({
-    profile,
-    score: calculateScore(profile, repos)
-  }))
+  Promise.all([ getProfile(player), getRepos(player)])
+    .then(([ profile, repos ]) => ({
+      profile,
+      score: calculateScore(profile, repos)
+    }))
 )
 
 const sortPlayers = players => (
