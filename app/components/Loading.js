@@ -11,20 +11,20 @@ const styles = {
 class Loading extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      text: props.text
-    }
+    this.state = { text: props.text }
   }
 
   componentDidMount() {
-    const stopper = `${this.props.text}...`
+    const { text, speed } = this.props
+    const stopper = `${text}...`
+
     this.interval = window.setInterval(() => {
       this.state.text === stopper
-        ? this.setState({ text: this.props.text })
-        : this.setState(preState => {
-          return { text: `${preState.text}.` }
-        })
-    }, this.props.speed)
+        ? this.setState({ text })
+        : this.setState(preState => ({
+          text: `${preState.text}.`
+        }))
+    }, speed)
   }
 
   componentWillUnmount() {
