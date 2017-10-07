@@ -19,7 +19,7 @@ class Loading extends Component {
     speed: 300
   }
 
-  state = { text: props.text }
+  state = { text: this.props.text }
 
   componentDidMount() {
     const { text, speed } = this.props
