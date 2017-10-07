@@ -50,5 +50,6 @@ export const battle = players => (
 export const fetchPopularRepos = language => (
   fetch(window.encodeURI(`https://api.github.com/search/repositories?q=stars:>1+language:${language}&sort=stars&order=desc&type=Repositories`))
     .then(res => res.json())
+    .then(data => data.items)
     .catch(handleError)
 )

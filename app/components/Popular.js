@@ -90,7 +90,7 @@ class Popular extends Component {
         {!repos
           ? <Loading />
           : <RepoGrid
-              repos={this.state.repos} />}
+              repos={repos} />}
       </div>
     )
   }
