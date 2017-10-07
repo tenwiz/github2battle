@@ -27,6 +27,7 @@
   "homepage": "https://github.com/Martian2Lee/Github-Battle#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "babel-polyfill": "^6.26.0",
     "query-string": "^5.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
