@@ -1,5 +1,5 @@
 # Github Battle
 GitHub Popularity Battle with React Router, Webpack, Firebase
 
-## LiveLink
+## Live Link
 https://github2battle.firebaseapp.com
