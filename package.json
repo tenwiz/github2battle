@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Martian2Lee/Github-Battle.git"
+    "url": "git+https://github.com/tenwiz/github2battle.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Martian2Lee/Github-Battle/issues"
+    "url": "https://github.com/tenwiz/github2battle/issues"
   },
-  "homepage": "https://github.com/Martian2Lee/Github-Battle#readme",
+  "homepage": "https://github.com/tenwiz/github2battle#readme",
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
